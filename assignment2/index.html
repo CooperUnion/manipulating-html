@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>assignment 2</title>
+    <title>prompt</title>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script>
       $(document).ready(function(){
 
-        $("#erase").click(function(){
-          $("#items").html("<li>this is the only list item</li>");
+        $("h2").click(function(){
+
+          var answerToTheQuestion = prompt("How are you feeling?");
+          console.log(answerToTheQuestion);
+
+          var response = "That's great that you're feeling " + answerToTheQuestion + " today!";
+          console.log(response);
+
+          $("h1").html(response);
+
         });
 
-        $("#append").click(function(){
-          $("#items").append("<li>This item goes at the end of the items</li>");
-        });
 
-        $("#prepend").click(function(){
-          $("#items").prepend("<li>This item goes at the beginning of the items</li>");
-        });
+
 
       });
     </script>
@@ -25,18 +28,8 @@
     </style>
   </head>
   <body>
-
-
-    <ul>
-      <li id="erase">start over</li>
-      <li id="append">add to the bottom</li>
-      <li id="prepend">add to the top</li>
-    </ul>
-
-    <ul id="items">
-      <li>item 1</li>
-      <li>item 2</li>
-    </ul>
+    <h2>Can I ask you a question?</h2>
+    <h1></h1>
 
   </body>
 </html>
