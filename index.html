@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>changing html w/ jquery</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        $("#erase").click(function(){
+          $("#items").html("<li>this is the only list item</li>");
+        });
+
+        $("#append").click(function(){
+          $("#items").append("<li>This item goes at the end of the items</li>");
+        });
+
+        $("#prepend").click(function(){
+          $("#items").prepend("<li>This item goes at the beginning of the items</li>");
+        });
+
+      });
+    </script>
+    <style>
+
+    </style>
+  </head>
+  <body>
+
+
+    <ul>
+      <li id="erase">start over</li>
+      <li id="append">add to the bottom</li>
+      <li id="prepend">add to the top</li>
+    </ul>
+
+    <ul id="items">
+      <li>item 1</li>
+      <li>item 2</li>
+    </ul>
+
+  </body>
+</html>
