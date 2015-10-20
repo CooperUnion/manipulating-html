@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>prompt</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        $("h2").click(function(){
+
+          var color = prompt("What is your favorite color?");
+          var answer = "Your favorite color is " + color + ".";
+          // var styleTag = "<style> h1 { color:" + color + "}</style>";
+
+
+          $("h1").append(answer);
+          $("h1").css("color", color);
+          $("h1").css("float", "left");
+
+
+        });
+
+
+      });
+    </script>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <h2>Can I ask you a question?</h2>
+    <h1></h1>
+
+  </body>
+</html>

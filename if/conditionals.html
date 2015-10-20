@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>prompt</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        var favFood = prompt("What's your favorite food? You can choose from pizza, soda, pasta.");
+
+
+        if(favFood === "pizza") {
+          var statement = "Pizza is my favorite!";
+        } else if(favFood === "soda") {
+          var statement = "Soda is gross. Bloomberg's ban was in the right direction.";
+        } else if(favFood === "pasta") {
+          var statement = "Pasta is super good too.";
+        } else {
+          var statement = favFood + " is probably pretty good.";
+        }
+
+
+        $("h1").html(statement);
+
+      });
+    </script>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <h1>hi!</h1>
+
+  </body>
+</html>

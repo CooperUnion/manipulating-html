@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>prompt</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        $("h2").click(function(){
+
+          var answerToTheQuestion = prompt("How are you feeling?");
+          console.log(answerToTheQuestion);
+
+          var response = "That's great that you're feeling " + answerToTheQuestion + " today!";
+          console.log(response);
+
+          $("h1").html(response);
+
+        });
+
+
+      });
+    </script>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <h2>Can I ask you a question?</h2>
+    <h1></h1>
+
+  </body>
+</html>

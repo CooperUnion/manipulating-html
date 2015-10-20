@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>prompt</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        var color = prompt("What's your favorite color?");
+
+        if(color === "red") {
+          console.log("yay, red is my favorite color too!");
+        } else {
+          var answer = "I'm not familiar with the color " + color + ".";
+          console.log(answer);
+        }
+
+        $("html").css("backgroundColor", color);
+
+
+
+        var age = prompt("What is your age?");
+        if(age >= 18) {
+          console.log("You're allowed to vote!");
+        } else {
+          console.log("You are not allowed to vote... at least in the US.");
+        }
+
+
+
+      });
+    </script>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <h1>hi!</h1>
+
+  </body>
+</html>
