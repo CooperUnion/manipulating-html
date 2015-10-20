@@ -6,6 +6,17 @@
     <script>
       $(document).ready(function(){
 
+
+
+        var audioElement = docment.createElement('audio');
+            audioElement.setAttribute("id", "audio1");
+            audioElement.setAttribute("class", "audioplayers");
+
+
+            $(".audioplayers").html("");
+
+
+
         $("#erase").click(function(){
           $("#items").html("<li>this is the only list item</li>");
         });

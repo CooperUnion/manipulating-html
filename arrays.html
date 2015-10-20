@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>arrays with jquery</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        var pokemon = ["pikachu","bulbasaur","meowth","snorlax","mew","mewtwo","venusaur","ivysaur","porygon","psyduck"];
+
+        // var offset = pokemon.length-1;
+        // console.log(pokemon[offset]);
+
+        // console.log(pokemon.indexOf(favPokemon));
+
+        $("h1").click(function(){
+          var favPokemon = prompt("What's your favorite Pokemon?");
+
+          if(pokemon.indexOf(favPokemon) >= 0) {
+            console.log("your pokemon is one of my favorite, but I'm selfish, and will limit your choices next time...");
+            pokemon.pop();
+          } else {
+            console.log("your pokemon is lame... but that's ok. I like to learn.");
+            pokemon.push(favPokemon);
+
+          }
+        })
+
+
+      });
+    </script>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <h1> ask a question</h1>
+  </body>
+</html>

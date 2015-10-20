@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>arrays with jquery</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        var fancyNumber = 5;
+
+        console.log(fancyNumber);
+
+        fancyNumber++;
+        console.log(fancyNumber);
+
+        fancyNumber = fancyNumber + 1;
+        console.log(fancyNumber);
+
+        for(var i=0; i<10; i++) {
+
+          if(i === 1) {
+            var ending = "st";
+          } else if(i === 2) {
+            var ending = "nd";
+          } else if(i === 3) {
+            var ending = "rd";
+          } else {
+            var ending = "th";
+          }
+
+
+          console.log("I am on the " + i + ending + " iteration.");
+        }
+
+
+
+
+      });
+    </script>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <h1> ask a question</h1>
+  </body>
+</html>
